@@ -219,6 +219,8 @@ spec:
             value: "{{ .Values.global.istiod.enableAnalysis }}"
           - name: PILOT_ENABLE_ANALYSIS
             value: "{{ .Values.global.istiod.enableAnalysis }}"
+          - name: PILOT_ENABLE_CONFIG_DISTRIBUTION_TRACKING
+            value: "{{ .Values.global.istiod.enableAnalysis }}"
           - name: CLUSTER_ID
             value: "{{ $.Values.global.multiCluster.clusterName | default `Kubernetes` }}"
           - name: GOMEMLIMIT
